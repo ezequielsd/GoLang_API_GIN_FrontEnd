@@ -1,0 +1,11 @@
+CREATE TABLE `lojaGO`.`produtos` (
+  `idprodutos` INT NOT NULL,
+  `nome` VARCHAR(100) NULL,
+  `descricao` VARCHAR(200) NULL,
+  `preco` DECIMAL(6,2) NULL,
+  `quantidade` INT NULL,
+  PRIMARY KEY (`idprodutos`),
+  UNIQUE INDEX `idprodutos_UNIQUE` (`idprodutos` ASC) VISIBLE);
+
+  ALTER TABLE `lojaGO`.`produtos` 
+CHANGE COLUMN `idprodutos` `idprodutos` INT NOT NULL AUTO_INCREMENT ;
